@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+overflow-x: hidden;
+font-family: "Montserrat", sans-serif;
+background-image: linear-gradient(to bottom right, #fff3b1, #ffb0f2);
+}
+
+#navbar {
+background-color: #ff7171;
+color: black;
+}
+
+.nav-links {
+max-width: 75%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: "DM Serif Display", serif;
+}
+
+li {
+list-style-type: none;
+font-size: 1.8rem;
+font-weight: 500;
+cursor: pointer;
+}
+
+.menu-container {
+height: 4rem;
+width: 4rem;
+}
+
+.menu-container > img {
+height: 100%;
+width: 100%;
+object-fit: contain;
+cursor: pointer;
+}
+
+#hero {
+display: flex;
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(to #fff1b3, #ffbce7);
+background-color: #ffdfc4;
+}
+.container {
+flex: 1;
+}
+
+.left {
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 10%;
+}
+
+.right {
+background-color: #e0e0e0;
+}
+
+.right img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.hero-txt {
+font-family: "Montserrat", sans-serif;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 3rem;
+line-height: 1.3;
+letter-spacing: 0.5rem;
+}
+
+.hero-para {
+max-width: 90%;
+font-size: 1.2rem;
+line-height: 2rem;
+font-weight: 400;
+}
+
+button {
+background-color: #ff7171;
+color: white;
+border: none;
+padding: 1rem 4rem;
+font-size: 1rem;
+margin-top: 1rem;
+cursor: pointer;
+font-family: inherit;
+}
+
+#showcase {
+min-height: 100vh;
+height: auto;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: start;
+padding: 0 5%;
+}
+
+.showcase-container {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.showcase-container img {
+height: 19rem;
+width: 19rem;
+object-fit: cover;
+}
+
+.showcase-3 {
+height: 39rem;
+margin: 0 1.5rem;
+object-fit: cover;
+}
+
+.showcase-box {
+min-height: 18rem;
+height: auto;
+min-width: 40%;
+width: auto;
+margin-left: 2rem;
+background-color: #ff7171;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+}
+
+.showcase-tag {
+position: absolute;
+top: 2%;
+left: 1rem;
+padding: 1rem 1.5rem;
+}
+
+.showcase-heading {
+text-transform: uppercase;
+font-weight: 700;
+letter-spacing: 0.3rem;
+font-size: 3.5rem;
+padding: 0 2rem;
+margin: 0 auto;
+position: relative;
+}
+
+.showcase-btn {
+display: flex;
+align-items: center;
+position: absolute;
+bottom: 1rem;
+left: 2rem;
+gap: 1rem;
+}
+
+.showcase-btn img {
+height: 2rem;
+width: 2rem;
+object-fit: contain;
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #navbar {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  li {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .menu-container {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.4rem;
+  }
+  .menu-container img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero-txt {
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .hero-para {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.8rem 3rem;
+    font-size: 0.9rem;
+  }
+
+  #showcase {
+    flex-direction: column;
+    padding: 0 5%;
+    align-items: center;
+    width: 100%;
+  }
+
+  .showcase-container img,
+  .showcase-3 {
+    width: 100vw;
+    height: auto;
+  }
+
+  .showcase-3 {
+    margin-top: 10%;
+    width: 100vw;
+  }
+
+  .showcase-box {
+    width: 100vw;
+    margin: 1rem 0;
+  }
+
+  .showcase-heading {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .showcase-btn {
+    left: 1rem;
+  }
+}
